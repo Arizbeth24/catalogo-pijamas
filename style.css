@@ -109,62 +109,55 @@ footer {
 }
 
 /* Modal estilo Instagram con descripción al costado derecho */
+/* Modal estilo Instagram con descripción al costado derecho */
+/* Modal estilo Instagram con descripción al costado derecho */
 .modal {
   display: none;
   position: fixed;
   z-index: 2000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Más amplio para acomodar imagen y descripción */
+  height: 70%; /* Proporción adecuada */
+  background-color: var(--blanco);
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera para profundidad */
 }
 
 .modal-content-wrapper {
-  display: flex;
-  background-color: var(--blanco);
-  border-radius: 20px;
-  max-width: 900px;  /* Reducimos el ancho máximo */
-  width: 75%;  /* 75% del ancho de la pantalla */
-  height: 70%;  /* 70% de la altura de la pantalla */
+  display: flex; /* Flexbox para colocar imagen y descripción lado a lado */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  justify-content: center;
-  align-items: center;
 }
 
 .modal-imagen {
-  width: 50%;  /* Reducimos la imagen al 50% del tamaño */
-  height: 100%;
+  width: 50%; /* Imagen ocupa la mitad izquierda */
+  height: auto; 
   object-fit: cover;
+  border-radius: 10px 0 0 10px; /* Bordes suaves para la imagen */
 }
 
 .modal-descripcion {
-  width: 50%;  /* Descripción ocupa el resto */
-  padding: 25px;
-  font-size: 18px;  /* Reducimos el tamaño del texto */
-  color: #444;
-  background-color: var(--blanco);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50%; /* Descripción ocupa la mitad derecha */
+  padding: 20px;
+  font-size: 18px; /* Tamaño mediano */
+  font-family: 'Poppins', sans-serif; /* Fuente estilizada y moderna */
+  color: #444; /* Color neutro y elegante */
   text-align: justify;
+  display: flex;
+  flex-direction: column; /* Acomoda el contenido en formato vertical */
+  justify-content: center; /* Centra verticalmente el texto */
+  background-color: var(--gris-claro); /* Fondo gris claro para contraste */
+  border-radius: 0 10px 10px 0; /* Bordes suaves del lado de la descripción */
 }
-
-.modal-descripcion p {
-  margin: 0;
-  font-weight: 400;
-}
-
 .cerrar {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   color: white;
   font-size: 40px;
   font-weight: bold;
@@ -172,24 +165,22 @@ footer {
   z-index: 2100;
 }
 
+/* Media Queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .modal-content-wrapper {
     flex-direction: column;
     width: 90%;
-    height: 80%;
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */
   }
 
   .modal-imagen,
   .modal-descripcion {
-    width: 100%;
-  }
-
-  .modal-imagen {
-    height: auto;
+    width: 100%; /* Imagen y descripción ocupan todo el ancho */
+    height: auto; /* Ajusta automáticamente la altura */
   }
 
   .modal-descripcion {
-    padding: 20px;
     font-size: 16px;
+    padding: 20px;
   }
 }
