@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Distrito 58</div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de bienvenida con logo grande -->
+  <section id="inicio" class="bienvenida">
+    <img src="./img/distrito2.png" alt="Logo de Distrito 58" class="logo-grande">
+  </section>
+
+  <!-- Catálogo de productos -->
+  <section id="catalogo" class="gallery">
+    <!-- Aquí se insertan las tarjetas de productos automáticamente -->
+  </section>
+
+  <!-- Modal para ver detalles -->
+<!-- Modal para ver detalles estilo Instagram -->
+<div id="modal" class="modal">
+  <span id="cerrarModal" class="cerrar">&times;</span>
+  <div class="modal-content-wrapper">
+    <img id="modalImagen" class="modal-imagen" />
+    <div class="modal-descripcion">
+      <p id="modalDescripcion"></p>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Botón para volver arriba -->
+  <button id="btnArriba" title="Volver arriba">↑</button>
+
+  <!-- Pie de página / contacto -->
+  <footer id="contacto">
+    <p>Contacto: 3318459824 | Instagram: @Distrito58</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
