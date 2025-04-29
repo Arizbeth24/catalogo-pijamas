@@ -1,155 +1,212 @@
 :root {
-    --rosa-pastel: #f8c6d8;
-    --beige-suave: #f5f5dc;
-    --blanco: #ffffff;
-    --gris-claro: #f0f0f0;
+  --rosa-pastel: #f8c6d8;
+  --beige-suave: #f5f5dc;
+  --blanco: #ffffff;
+  --gris-claro: #f0f0f0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--blanco);
+}
+
+header {
+  background: var(--rosa-pastel);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  color: #444;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 14px;
+}
+
+footer {
+  background: var(--rosa-pastel);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+  background-color: var(--blanco);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-grande {
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Modal estilo Instagram con descripción al costado derecho */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  background-color: var(--blanco);
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90%;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.modal-imagen {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-descripcion {
+  width: 40%;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #444;
+  background-color: var(--blanco); /* igual al fondo general */
+}
+
+.modal-descripcion p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2100;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content-wrapper {
+    flex-direction: column;
+    max-height: 95%;
   }
-  
-  body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--blanco);
-  }
-  
-  header {
-    background: var(--rosa-pastel);
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-  }
-  
-  .card {
-    background: var(--blanco);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .card:hover {
-    transform: scale(1.03);
-  }
-  
-  .card img {
+
+  .modal-imagen,
+  .modal-descripcion {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
   }
-  
-  .card-content {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .card-content h3 {
-    margin: 10px 0;
-    color: #444;
-  }
-  
-  .card-content p {
-    color: #666;
-    font-size: 14px;
-  }
-  
-  footer {
-    background: var(--rosa-pastel);
-    text-align: center;
+
+  .modal-descripcion {
     padding: 20px;
-    color: white;
-  }
-  
-  /* Modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 60%;
-    max-width: 700px;
-    transition: 0.3s;
-    border-radius: 10px;
-  }
-  
-  .descripcion {
-    margin: 20px auto;
-    width: 60%;
-    text-align: center;
-    color: white;
     font-size: 18px;
   }
-  
-  .cerrar {
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .modal-content-wrapper {
+    flex-direction: column;
+    height: auto;
   }
-  
-  @media screen and (max-width: 768px) {
-    .modal-content, .descripcion {
-      width: 90%;
-    }
+
+  .modal-imagen,
+  .modal-descripcion {
+    width: 100%;
+    height: auto;
   }
-  .bienvenida {
-    background-color: var(--blanco);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .modal-descripcion {
+    padding: 20px;
+    font-size: 16px;
   }
-  
-  .logo-grande {
-    max-width: 500px; 
-    width: 90%;
-    animation: fadeIn 1.5s ease;
-  }  
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
+
+  .modal-descripcion p {
+    padding: 15px;
   }
-  
+}
