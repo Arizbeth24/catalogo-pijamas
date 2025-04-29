@@ -118,53 +118,49 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%; /* Más amplio para acomodar imagen y descripción */
-  height: 70%; /* Proporción adecuada */
+  width: 70%; /* Proporción adecuada para acomodar imagen y descripción */
+  height: auto; /* Se ajusta dinámicamente al contenido */
   background-color: var(--blanco);
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera para profundidad */
+  border-radius: 10px; /* Bordes suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera */
 }
 
 .modal-content-wrapper {
   display: flex; /* Flexbox para colocar imagen y descripción lado a lado */
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  gap: 20px; /* Espacio entre la imagen y la descripción */
+  align-items: center; /* Asegura que ambos se alineen correctamente */
 }
 
 .modal-imagen {
   width: 50%; /* Imagen ocupa la mitad izquierda */
   height: auto; 
-  object-fit: cover;
-  border-radius: 10px 0 0 10px; /* Bordes suaves para la imagen */
+  object-fit: cover; 
+  border-radius: 10px; /* Bordes suaves para una estética uniforme */
 }
 
 .modal-descripcion {
   width: 50%; /* Descripción ocupa la mitad derecha */
   padding: 20px;
-  font-size: 18px; /* Tamaño mediano */
+  font-size: 18px; /* Tamaño adecuado para una mejor legibilidad */
   font-family: 'Poppins', sans-serif; /* Fuente estilizada y moderna */
-  color: #444; /* Color neutro y elegante */
+  color: #444; /* Color neutro elegante */
   text-align: justify;
-  display: flex;
-  flex-direction: column; /* Acomoda el contenido en formato vertical */
-  justify-content: center; /* Centra verticalmente el texto */
   background-color: var(--gris-claro); /* Fondo gris claro para contraste */
-  border-radius: 0 10px 10px 0; /* Bordes suaves del lado de la descripción */
+  border-radius: 10px; /* Bordes suaves para uniformidad */
+  box-shadow: none; /* Sin sombras adicionales */
 }
 .cerrar {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: white;
+  color: var(--rosa-pastel); /* Cambia el color a rosa pastel */
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
   z-index: 2100;
 }
-
 /* Media Queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .modal-content-wrapper {
