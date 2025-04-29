@@ -134,4 +134,22 @@
       width: 90%;
     }
   }
+  .bienvenida {
+    background-color: var(--blanco);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-grande {
+    max-width: 500px; 
+    width: 90%;
+    animation: fadeIn 1.5s ease;
+  }  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
   
