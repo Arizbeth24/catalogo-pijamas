@@ -124,7 +124,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -132,7 +132,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -140,7 +140,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -148,7 +148,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -156,7 +156,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -164,7 +164,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/vestido.jpeg",
+    imagen: "./img/Vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -211,54 +211,70 @@ const productos = [
 ];
 
 // Función para crear las tarjetas de productos
+let productoActual = null;
+
+// Crear tarjetas de productos
 function crearTarjetas() {
   const categorias = ["pijamas", "pantalones", "vestidos", "detalles"];
   categorias.forEach(categoria => {
-    const contenedorCategoria = document.querySelector(`#${categoria} .productos`);
-    const productosFiltrados = productos.filter(producto => producto.categoria === categoria);
+    const contenedor = document.querySelector(`#${categoria} .productos`);
+    const filtrados = productos.filter(p => p.categoria === categoria);
 
-    productosFiltrados.forEach(producto => {
+    filtrados.forEach(producto => {
       const tarjeta = document.createElement("div");
       tarjeta.classList.add("card");
-
       tarjeta.innerHTML = `
         <img src="${producto.imagen}" alt="${producto.nombre}">
         <div class="card-content">
           <h3>${producto.nombre}</h3>
           <p>${producto.miniDescripcion}</p>
           <span>${producto.precio}</span>
-        </div>
-      `;
-
-      // Evento para abrir el modal al hacer clic
+        </div>`;
       tarjeta.addEventListener("click", () => mostrarModal(producto));
-
-      contenedorCategoria.appendChild(tarjeta);
+      contenedor.appendChild(tarjeta);
     });
   });
 }
 
-// Función para mostrar el modal
+// Mostrar modal de producto
 function mostrarModal(producto) {
   const modal = document.getElementById("modal");
-  const modalImagen = document.getElementById("modalImagen");
-  const modalDescripcion = document.getElementById("modalDescripcion");
+  productoActual = producto;
 
-  modalImagen.src = producto.imagen;
-  modalDescripcion.textContent = producto.descripcionCompleta;
+  document.getElementById("modalImagen").src = producto.imagen;
+  document.getElementById("modalDescripcion").textContent = producto.descripcionCompleta;
 
   modal.style.display = "block";
 }
 
-// Cerrar el modal
+// Cambiar producto con flechas
+function cambiarProducto(direccion) {
+  const indexActual = productos.indexOf(productoActual);
+  let nuevoIndex = indexActual + direccion;
+
+  if (nuevoIndex >= productos.length) nuevoIndex = 0; // Cicla al inicio
+  if (nuevoIndex < 0) nuevoIndex = productos.length - 1; // Cicla al final
+
+  mostrarModal(productos[nuevoIndex]);
+}
+
+// Eventos del teclado
+document.addEventListener("keydown", (e) => {
+  if (document.getElementById("modal").style.display === "block") {
+    if (e.key === "Escape") {
+      document.getElementById("modal").style.display = "none";
+    } else if (e.key === "ArrowRight") {
+      cambiarProducto(1);
+    } else if (e.key === "ArrowLeft") {
+      cambiarProducto(-1);
+    }
+  }
+});
+
+// Cerrar modal
 document.getElementById("cerrarModal").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
 
-// Función para el botón de volver arriba
-document.getElementById("btnArriba").addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// Cargar las tarjetas al inicio
+// Inicia la creación de tarjetas al cargar
 document.addEventListener("DOMContentLoaded", crearTarjetas);
