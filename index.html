@@ -22,33 +22,59 @@
   <!-- Sección de bienvenida con logo grande -->
   <section id="inicio" class="bienvenida">
     <img src="./img/distrito2.png" alt="Logo de Distrito 58" class="logo-grande">
+    <!-- Botones para navegar a las secciones -->
+    <div class="botones-navegacion">
+      <button onclick="window.location.href='#pantalones'">Pantalones de Mezclilla</button>
+      <button onclick="window.location.href='#vestidos'">Vestidos</button>
+      <button onclick="window.location.href='#pijamas'">Pijamas</button>
+      <button onclick="window.location.href='#detalles'">Detalles</button>
+    </div>
   </section>
 
-  <!-- Catálogo de productos -->
+  <!-- Sección de Catálogo -->
   <section id="catalogo" class="gallery">
     <!-- Aquí se insertan las tarjetas de productos automáticamente -->
   </section>
 
+  <!-- Secciones para cada categoría -->
+  <section id="pantalones" class="galeria-categoria">
+    <h2>Pantalones de Mezclilla</h2>
+    <div class="productos"></div>
+  </section>
+
+  <section id="vestidos" class="galeria-categoria">
+    <h2>Vestidos</h2>
+    <div class="productos"></div>
+  </section>
+
+  <section id="pijamas" class="galeria-categoria">
+    <h2>Pijamas</h2>
+    <div class="productos"></div>
+  </section>
+
+  <section id="detalles" class="galeria-categoria">
+    <h2>Detalles</h2>
+    <div class="productos"></div>
+  </section>
+
   <!-- Modal para ver detalles -->
-<!-- Modal para ver detalles estilo Instagram -->
-<div id="modal" class="modal">
-  <span id="cerrarModal" class="cerrar">&times;</span>
-  <div class="modal-content-wrapper">
-    <img id="modalImagen" class="modal-imagen" />
-    <div class="modal-descripcion">
-      <p id="modalDescripcion"></p>
+  <div id="modal" class="modal">
+    <span id="cerrarModal" class="cerrar">&times;</span>
+    <div class="modal-content-wrapper">
+      <img id="modalImagen" class="modal-imagen" />
+      <div class="modal-descripcion">
+        <p id="modalDescripcion"></p>
+      </div>
     </div>
   </div>
-</div>
 
-  
   <!-- Botón para volver arriba -->
   <button id="btnArriba" title="Volver arriba">↑</button>
+
   <footer id="contacto">
     <p>
       Contacto: 3318459824 | Instagram: 
       <a href="https://www.instagram.com/dis.trito58?igsh=MTh6dWNkMmVpcmpiNg==" target="_blank" rel="noopener noreferrer">@Distrito58</a>
-  
     </p>
   </footer>
 
