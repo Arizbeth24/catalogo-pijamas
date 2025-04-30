@@ -124,7 +124,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -132,7 +132,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -140,7 +140,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -148,7 +148,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -156,7 +156,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
@@ -164,7 +164,7 @@ const productos = [
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
     descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
-    imagen: "./img/Vestido.jpeg",
+    imagen: "./img/vestido.jpeg",
     categoria: "vestidos"
   },
   {
