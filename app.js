@@ -120,6 +120,40 @@ const productos = [
     
   },
   {
+    nombre: "Pantalón Mezclilla Slim",
+    precio: "$500",
+    miniDescripcion: "Pantalón de mezclilla ajustado. Talla: 30 (Mediana).",
+    descripcionCompleta: "Pantalón de mezclilla de corte slim, ideal para un look moderno y elegante. Con detalles de desgaste ligero y un toque de estilo casual. Con cinturilla elástica para mayor confort.",
+    imagen: "./img/pantalon.jpeg",
+    categoria: "pantalones"
+    
+  },
+  {
+    nombre: "Pantalón Mezclilla Slim",
+    precio: "$500",
+    miniDescripcion: "Pantalón de mezclilla ajustado. Talla: 30 (Mediana).",
+    descripcionCompleta: "Pantalón de mezclilla de corte slim, ideal para un look moderno y elegante. Con detalles de desgaste ligero y un toque de estilo casual. Con cinturilla elástica para mayor confort.",
+    imagen: "./img/pantalon.jpeg",
+    categoria: "pantalones"
+    
+  },
+  {
+    nombre: "Vestido Floral Elegante",
+    precio: "$800",
+    miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
+    descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
+    imagen: "./img/vestido.jpeg",
+    categoria: "vestidos"
+  },
+  {
+    nombre: "Vestido Floral Elegante",
+    precio: "$800",
+    miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
+    descripcionCompleta: "Vestido largo y fluido con un delicado estampado floral, ideal para ocasiones especiales. Con un diseño sin mangas y falda fluida para mayor comodidad. Perfecto para un look elegante y fresco.",
+    imagen: "./img/vestido.jpeg",
+    categoria: "vestidos"
+  },
+  {
     nombre: "Vestido Floral Elegante",
     precio: "$800",
     miniDescripcion: "Vestido largo con estampado floral. Talla: M (Mediana).",
