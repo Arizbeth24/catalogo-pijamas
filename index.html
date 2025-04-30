@@ -3,26 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo interactivo de productos de Distrito 58">
   <title>Catálogo de Productos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <nav>
-      <div class="logo">Distrito 58</div>
-      <ul>
+    <nav class="nav-container">
+      <ul class="nav-list">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
+        <li>
+          <div class="dropdown-catalogo">
+            <button class="dropdown-btn">Catálogo</button>
+            <div class="dropdown-content">
+              <a href="#pantalones">Pantalones</a>
+              <a href="#vestidos">Vestidos</a>
+              <a href="#pijamas">Pijamas</a>
+              <a href="#detalles">Detalles</a>
+            </div>
+          </div>
+        </li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sección de bienvenida con logo grande -->
+  <!-- Sección de bienvenida -->
   <section id="inicio" class="bienvenida">
     <img src="./img/distrito2.png" alt="Logo de Distrito 58" class="logo-grande">
-    <!-- Botones para navegar a las secciones -->
     <div class="botones-navegacion">
       <button onclick="window.location.href='#pantalones'">Pantalones de Mezclilla</button>
       <button onclick="window.location.href='#vestidos'">Vestidos</button>
@@ -31,12 +39,7 @@
     </div>
   </section>
 
-  <!-- Sección de Catálogo -->
-  <section id="catalogo" class="gallery">
-    <!-- Aquí se insertan las tarjetas de productos automáticamente -->
-  </section>
-
-  <!-- Secciones para cada categoría -->
+  <!-- Secciones de productos -->
   <section id="pantalones" class="galeria-categoria">
     <h2>Pantalones de Mezclilla</h2>
     <div class="productos"></div>
@@ -57,23 +60,26 @@
     <div class="productos"></div>
   </section>
 
-  <!-- Modal para ver detalles -->
+  <!-- Modal para ver producto -->
   <div id="modal" class="modal">
-    <span id="cerrarModal" class="cerrar">&times;</span>
-    <div class="modal-content-wrapper">
-      <img id="modalImagen" class="modal-imagen" />
-      <div class="modal-descripcion">
-        <p id="modalDescripcion"></p>
-      </div>
+  <span id="cerrarModal" class="cerrar">&times;</span>
+  <!-- Flechas fuera del área blanca -->
+  <span class="flecha izquierda" onclick="cambiarProducto(-1)">&#8249;</span>
+  <span class="flecha derecha" onclick="cambiarProducto(1)">&#8250;</span>
+  <div class="modal-content-wrapper">
+    <img id="modalImagen" class="modal-imagen" />
+    <div class="modal-descripcion">
+      <p id="modalDescripcion"></p>
     </div>
   </div>
+</div>
 
-  <!-- Botón para volver arriba -->
+  <!-- Botón de volver arriba -->
   <button id="btnArriba" title="Volver arriba">↑</button>
 
   <footer id="contacto">
     <p>
-      Contacto: 3318459824 | Instagram: 
+      Contacto: 3318459824 | Instagram:
       <a href="https://www.instagram.com/dis.trito58?igsh=MTh6dWNkMmVpcmpiNg==" target="_blank" rel="noopener noreferrer">@Distrito58</a>
     </p>
   </footer>
