@@ -56,24 +56,7 @@ const productos = [
     imagen: "./img/pijamaaaa.jpeg",
     categoria: "pijamas"
   },
-  {
-    nombre: "Pijama Rosa Pastel de Corazones",
-    precio: "$380",
-    miniDescripcion: "Pijama romántica y sofisticada. Talla: M (Mediana).",
-    descripcionCompleta: "Conjunto en tono rosa claro decorado con corazones rojos y blancos. Incluye camisa de botones y shorts con detalles decorativos que aportan estilo y comodidad. Perfecto para relajarse con un toque romántico.",
-    imagen: "./img/pijamaaaa.jpeg",
-    categoria: "pijamas"
-  },
-  {
-    nombre: "Pijama Tropical de Flamencos",
-    precio: "$380",
-    miniDescripcion: "Pijama con diseño alegre y fresco. Talla: XL (Extra Grande).",
-    descripcionCompleta: "Conjunto de pijama con estampado de flamencos rosados sobre fondo gris claro. La camisa de botones y los pantalones largos con cintura elástica ofrecen una combinación perfecta de estilo tropical y comodidad.",
-    imagen: "./img/pijamaaaa.jpeg",
-    categoria: "pijamas"
-  },
-
-  // Otros productos
+  
   {
     nombre: "Pantalón Mezclilla Slim",
     precio: "$500",
@@ -218,6 +201,22 @@ const productos = [
     categoria: "detalles"
   },
   {
+    nombre: "Detalles de Regalo Rosa",
+    precio: "$150",
+    miniDescripcion: "Detalle decorativo en color rosa. Tamaño: Pequeño.",
+    descripcionCompleta: "Set de detalles decorativos en color rosa pastel, ideal para complementar cualquier regalo o como decoración para tu hogar. Incluye varias figuras en miniatura para un toque único y elegante.",
+    imagen: "./img/flor.jpeg",
+    categoria: "detalles"
+  },
+  {
+    nombre: "Detalles de Regalo Rosa",
+    precio: "$150",
+    miniDescripcion: "Detalle decorativo en color rosa. Tamaño: Pequeño.",
+    descripcionCompleta: "Set de detalles decorativos en color rosa pastel, ideal para complementar cualquier regalo o como decoración para tu hogar. Incluye varias figuras en miniatura para un toque único y elegante.",
+    imagen: "./img/flor.jpeg",
+    categoria: "detalles"
+  },
+   {
     nombre: "Detalles de Regalo Rosa",
     precio: "$150",
     miniDescripcion: "Detalle decorativo en color rosa. Tamaño: Pequeño.",
