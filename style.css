@@ -11,6 +11,18 @@ body {
   background-color: var(--blanco);
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--rosa-pastel);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
 header {
   background: var(--rosa-pastel);
   padding: 10px 30px;
@@ -152,6 +164,48 @@ nav ul li a {
 }
 
 /* Modal estilo Instagram */
+/* Barra desplegable de catálogo */
+.dropdown-catalogo {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: var(--rosa-pastel);
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--blanco);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: var(--rosa-pastel);
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gris-claro);
+}
+
+.dropdown-catalogo:hover .dropdown-content {
+  display: block;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -159,15 +213,38 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 800px;
   background-color: var(--blanco);
+  width: 80%;
+  max-width: 800px;
   padding: 20px;
-  box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--gris-claro);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2100;
+}
+
+.flecha.izquierda {
+  left: 10px;
+}
+
+.flecha.derecha {
+  right: 10px;
+}
 .modal-content-wrapper {
   display: flex;
   flex-direction: column;
