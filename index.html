@@ -6,26 +6,30 @@
   <meta name="description" content="Catálogo interactivo de productos de Distrito 58">
   <title>Catálogo de Productos</title>
   <link rel="stylesheet" href="style.css">
-</head>
+<</head>
 <body>
   <header>
     <nav class="nav-container">
       <ul class="nav-list">
         <li><a href="#inicio">Inicio</a></li>
-        <li>
-          <div class="dropdown-catalogo">
-            <button class="dropdown-btn">Catálogo</button>
-            <div class="dropdown-content">
-              <a href="#pantalones">Pantalones</a>
-              <a href="#vestidos">Vestidos</a>
-              <a href="#pijamas">Pijamas</a>
-              <a href="#detalles">Detalles</a>
-            </div>
+        <li class="dropdown-catalogo">
+          <a href="#catalogo" class="dropdown-btn">Catálogo</a>
+          <div class="dropdown-content">
+            <a href="#pantalones">Pantalones</a>
+            <a href="#vestidos">Vestidos</a>
+            <a href="#pijamas">Pijamas</a>
+            <a href="#detalles">Detalles</a>
+            <a href="#lenceria">Lencería</a>
+            <a href="#lociones">Lociones y Cremas</a>
+            <a href="#papeleria">Papelería</a>
+            <a href="#maquillaje">Maquillaje</a>
+            <a href="#bolsos">Bolsos y Carteras</a>
           </div>
         </li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <img src="./img/distrito2.png" alt="Distrito 58" class="logo-mini">
   </header>
 
   <!-- Sección de bienvenida -->
@@ -36,6 +40,11 @@
       <button onclick="window.location.href='#vestidos'">Vestidos</button>
       <button onclick="window.location.href='#pijamas'">Pijamas</button>
       <button onclick="window.location.href='#detalles'">Detalles</button>
+      <button onclick="window.location.href='#lenceria'">Lencería</button>
+      <button onclick="window.location.href='#lociones'">Lociones y Cremas</button>
+      <button onclick="window.location.href='#papeleria'">Papelería</button>
+      <button onclick="window.location.href='#maquillaje'">Maquillaje</button>
+      <button onclick="window.location.href='#bolsos'">Bolsos y Carteras</button>
     </div>
   </section>
 
@@ -59,7 +68,29 @@
     <h2>Detalles</h2>
     <div class="productos"></div>
   </section>
-
+  <section id="lenceria" class="galeria-categoria">
+    <h2>Lencería</h2>
+    <div class="productos"></div>
+    <section id="lociones" class="galeria-categoria">
+      <h2>Lociones y Cremas</h2>
+      <div class="productos"></div>
+    </section>
+    
+    <section id="papeleria" class="galeria-categoria">
+      <h2>Papelería</h2>
+      <div class="productos"></div>
+    </section>
+    
+    <section id="maquillaje" class="galeria-categoria">
+      <h2>Maquillaje</h2>
+      <div class="productos"></div>
+    </section>
+    
+    <section id="bolsos" class="galeria-categoria">
+      <h2>Bolsos y Carteras</h2>
+      <div class="productos"></div>
+    </section>
+  
   <!-- Modal para ver producto -->
   <div id="modal" class="modal">
   <span id="cerrarModal" class="cerrar">&times;</span>
@@ -76,13 +107,16 @@
 
   <!-- Botón de volver arriba -->
   <button id="btnArriba" title="Volver arriba">↑</button>
-
-  <footer id="contacto">
-    <p>
-      Contacto: 3318459824 | Instagram:
-      <a href="https://www.instagram.com/dis.trito58?igsh=MTh6dWNkMmVpcmpiNg==" target="_blank" rel="noopener noreferrer">@Distrito58</a>
-    </p>
-  </footer>
+      <footer id="contacto">
+        <p>
+          Contacto: 3318459824 | 
+          WhatsApp: 
+          <a href="https://wa.me/523318459824" target="_blank" rel="noopener noreferrer">Envíanos un mensaje</a> | 
+          Instagram: 
+          <a href="https://www.instagram.com/dis.trito58?igsh=MTh6dWNkMmVpcmpiNg==" target="_blank" rel="noopener noreferrer">@Distrito58</a>
+        </p>
+      </footer>
+      
 
   <script src="app.js"></script>
 </body>
