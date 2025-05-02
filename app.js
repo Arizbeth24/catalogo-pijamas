@@ -239,7 +239,322 @@ const productos = [
     descripcionCompleta: "Set de detalles decorativos en color rosa pastel, ideal para complementar cualquier regalo o como decoración para tu hogar. Incluye varias figuras en miniatura para un toque único y elegante.",
     imagen: "./img/flor.jpeg",
     categoria: "detalles"
-  }
+  },
+  // Lencería
+{ 
+  nombre: "Set de Lencería Encaje Negro 001",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/001.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 002",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/002.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 003",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/003.jpeg",
+  categoria: "lenceria"
+},
+
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/004.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/006.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/007.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/008.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/009.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/0010.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/011.jpeg",
+  categoria: "lenceria"
+},
+{ 
+  nombre: "Set de Lencería Encaje Negro 052",
+  precio: "$290",
+  miniDescripcion: "Conjunto elegante de encaje. Talla: M",
+  descripcionCompleta: "Conjunto de lencería de dos piezas con encaje negro y detalles finos. Cómodo, sensual y elegante.",
+  imagen: "./img/012.jpeg",
+  categoria: "lenceria"
+},
+{
+  nombre: "Loción Floral de Rosas",
+  precio: "$250",
+  miniDescripcion: "Aroma suave de rosas. Contenido: 120 ml.",
+  descripcionCompleta: "Loción corporal con fragancia floral de rosas, ideal para uso diario. Hidratante y ligera.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Crema de Cacao",
+  precio: "$180",
+  miniDescripcion: "Nutritiva para piel seca. Contenido: 150 ml.",
+  descripcionCompleta: "Crema corporal enriquecida con manteca de cacao, ideal para piel seca y agrietada.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Loción Vainilla Dulce",
+  precio: "$220",
+  miniDescripcion: "Aroma dulce y cálido. Contenido: 100 ml.",
+  descripcionCompleta: "Loción hidratante con fragancia de vainilla suave. Perfecta para pieles normales.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Crema de Manos Lavanda",
+  precio: "$90",
+  miniDescripcion: "Tamaño de bolsillo. Contenido: 50 ml.",
+  descripcionCompleta: "Crema de manos relajante con aroma a lavanda. Formato ideal para llevar.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Loción Brisa Marina",
+  precio: "$240",
+  miniDescripcion: "Refrescante y ligera. Contenido: 110 ml.",
+  descripcionCompleta: "Loción con notas marinas y toque cítrico. Sensación fresca durante todo el día.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Crema Corporal Coco",
+  precio: "$190",
+  miniDescripcion: "Fragancia tropical. Contenido: 200 ml.",
+  descripcionCompleta: "Crema hidratante con extracto de coco, ideal para revitalizar la piel.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Loción Frutal Tropical",
+  precio: "$230",
+  miniDescripcion: "Con notas de mango y piña. 100 ml.",
+  descripcionCompleta: "Loción corporal frutal ideal para primavera y verano. Hidratación y frescura.",
+  imagen: "./img/Lociones.jpg",
+  categoria: "lociones"
+},
+{
+  nombre: "Set de Notas Adhesivas Pastel",
+  precio: "$60",
+  miniDescripcion: "Colores pastel. Incluye 100 hojas.",
+  descripcionCompleta: "Set de post-its en tonos suaves. Ideal para oficina, escuela o agenda personal.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Cuaderno de Flores",
+  precio: "$85",
+  miniDescripcion: "Diseño floral. 80 hojas rayadas.",
+  descripcionCompleta: "Cuaderno tamaño carta con portada floral y hojas rayadas para apuntes o journaling.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Set de Plumas Gel",
+  precio: "$90",
+  miniDescripcion: "6 colores. Punta fina.",
+  descripcionCompleta: "Set de plumas de gel en colores surtidos. Escritura fluida y suave.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Agenda 2025 Rosa",
+  precio: "$120",
+  miniDescripcion: "Diseño elegante. Semanal.",
+  descripcionCompleta: "Agenda de vista semanal con espacio para notas, recordatorios y tareas diarias.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Stickers Decorativos",
+  precio: "$70",
+  miniDescripcion: "Diseños variados. Incluye 5 hojas.",
+  descripcionCompleta: "Stickers para planners, cuadernos o decoración. Estilo kawaii y minimalista.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Marcadores Pastel",
+  precio: "$110",
+  miniDescripcion: "6 tonos suaves.",
+  descripcionCompleta: "Marcadores ideales para subrayar sin manchar. Paleta pastel.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Cartuchera Transparente",
+  precio: "$75",
+  miniDescripcion: "PVC resistente. Cierre superior.",
+  descripcionCompleta: "Cartuchera compacta, ideal para llevar plumas, lápices y borradores.",
+  imagen: "./img/Cuaderno.jpeg",
+  categoria: "papeleria"
+},
+{
+  nombre: "Labial Líquido Rosa Nude",
+  precio: "$150",
+  miniDescripcion: "Acabado mate. Larga duración.",
+  descripcionCompleta: "Labial líquido en tono rosa nude. Textura suave, secado rápido y no transfiere.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Paleta de Sombras Naturales",
+  precio: "$220",
+  miniDescripcion: "6 tonos neutros. Acabado mate y shimmer.",
+  descripcionCompleta: "Paleta compacta con tonos versátiles para uso diario o noche.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Delineador Negro Waterproof",
+  precio: "$130",
+  miniDescripcion: "Punta precisa. Resistente al agua.",
+  descripcionCompleta: "Delineador en lápiz con punta fina y color intenso. Dura todo el día.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Rubor Rosado Compacto",
+  precio: "$140",
+  miniDescripcion: "Textura sedosa. Tonalidad natural.",
+  descripcionCompleta: "Rubor compacto fácil de difuminar. Ideal para piel clara a media.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Máscara de Pestañas Volumen",
+  precio: "$160",
+  miniDescripcion: "Cepillo curvo. Negro intenso.",
+  descripcionCompleta: "Riza, define y da volumen sin grumos. A prueba de agua.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Iluminador Líquido",
+  precio: "$180",
+  miniDescripcion: "Acabado glow. Color champagne.",
+  descripcionCompleta: "Iluminador en gotero para aplicar en mejillas, cejas o escote.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Base Líquida Tono Medio",
+  precio: "$210",
+  miniDescripcion: "Cobertura media. Con protector solar.",
+  descripcionCompleta: "Base fluida que unifica el tono y protege la piel con FPS 15.",
+  imagen: "./img/Labial.jpeg",
+  categoria: "maquillaje"
+},
+{
+  nombre: "Bolso Cruzado Beige",
+  precio: "$350",
+  miniDescripcion: "Compacto y elegante.",
+  descripcionCompleta: "Bolso cruzado de tamaño mediano con cadena dorada y cierre de botón.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Cartera Floral",
+  precio: "$180",
+  miniDescripcion: "Diseño delicado. Cierre de broche.",
+  descripcionCompleta: "Cartera pequeña con estampado floral, ideal para monedas y billetes.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Bolso Shopper Negro",
+  precio: "$520",
+  miniDescripcion: "Amplio y resistente.",
+  descripcionCompleta: "Bolso tipo shopper con asas largas y forro interior. Ideal para el día a día.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Cartera con Cremallera Rosa",
+  precio: "$220",
+  miniDescripcion: "Compartimentos múltiples.",
+  descripcionCompleta: "Cartera de tamaño estándar con espacio para tarjetas, billetes y monedas.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Mini Bolso Pastel",
+  precio: "$290",
+  miniDescripcion: "Estilo juvenil. Asa corta.",
+  descripcionCompleta: "Mini bolso estructurado en colores pastel. Ideal para salidas informales.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Bolso Casual Verde Oliva",
+  precio: "$400",
+  miniDescripcion: "Material sintético. Interior forrado.",
+  descripcionCompleta: "Bolso informal con múltiples compartimentos y cierre de cremallera.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+{
+  nombre: "Cartera Glitter Nocturna",
+  precio: "$250",
+  miniDescripcion: "Brillante y elegante.",
+  descripcionCompleta: "Cartera de fiesta con glitter, perfecta para ocasiones especiales.",
+  imagen: "./img/Bolso.jpeg",
+  categoria: "bolsos"
+},
+
   
 ];
 
@@ -248,8 +563,18 @@ let productoActual = null;
 
 // Crear tarjetas de productos
 function crearTarjetas() {
-  const categorias = ["pijamas", "pantalones", "vestidos", "detalles"];
-  categorias.forEach(categoria => {
+  const categorias = [
+    "pijamas",
+    "pantalones",
+    "vestidos",
+    "detalles",
+    "lenceria",
+    "lociones",
+    "papeleria",
+    "maquillaje",
+    "bolsos"
+  ];
+    categorias.forEach(categoria => {
     const contenedor = document.querySelector(`#${categoria} .productos`);
     const filtrados = productos.filter(p => p.categoria === categoria);
 
